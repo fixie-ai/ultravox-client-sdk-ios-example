@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B55A92522CE7F1A1002502FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B55A92392CE7F1A0002502FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B55A92402CE7F1A0002502FA;
+			remoteInfo = "ultravox-client-sdk-ios-example";
+		};
+		B55A925C2CE7F1A1002502FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B55A92392CE7F1A0002502FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B55A92402CE7F1A0002502FA;
+			remoteInfo = "ultravox-client-sdk-ios-example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B55A92412CE7F1A0002502FA /* ultravox-client-sdk-ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ultravox-client-sdk-ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55A92512CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ultravox-client-sdk-ios-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55A925B2CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ultravox-client-sdk-ios-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B55A92432CE7F1A0002502FA /* ultravox-client-sdk-ios-example */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ultravox-client-sdk-ios-example";
+			sourceTree = "<group>";
+		};
+		B55A92542CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ultravox-client-sdk-ios-exampleTests";
+			sourceTree = "<group>";
+		};
+		B55A925E2CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ultravox-client-sdk-ios-exampleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B55A923E2CE7F1A0002502FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55A924E2CE7F1A1002502FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55A92582CE7F1A1002502FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B55A92382CE7F1A0002502FA = {
+			isa = PBXGroup;
+			children = (
+				B55A92432CE7F1A0002502FA /* ultravox-client-sdk-ios-example */,
+				B55A92542CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleTests */,
+				B55A925E2CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleUITests */,
+				B55A92422CE7F1A0002502FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B55A92422CE7F1A0002502FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B55A92412CE7F1A0002502FA /* ultravox-client-sdk-ios-example.app */,
+				B55A92512CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleTests.xctest */,
+				B55A925B2CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B55A92402CE7F1A0002502FA /* ultravox-client-sdk-ios-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55A92652CE7F1A1002502FA /* Build configuration list for PBXNativeTarget "ultravox-client-sdk-ios-example" */;
+			buildPhases = (
+				B55A923D2CE7F1A0002502FA /* Sources */,
+				B55A923E2CE7F1A0002502FA /* Frameworks */,
+				B55A923F2CE7F1A0002502FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B55A92432CE7F1A0002502FA /* ultravox-client-sdk-ios-example */,
+			);
+			name = "ultravox-client-sdk-ios-example";
+			packageProductDependencies = (
+			);
+			productName = "ultravox-client-sdk-ios-example";
+			productReference = B55A92412CE7F1A0002502FA /* ultravox-client-sdk-ios-example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B55A92502CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55A92682CE7F1A1002502FA /* Build configuration list for PBXNativeTarget "ultravox-client-sdk-ios-exampleTests" */;
+			buildPhases = (
+				B55A924D2CE7F1A1002502FA /* Sources */,
+				B55A924E2CE7F1A1002502FA /* Frameworks */,
+				B55A924F2CE7F1A1002502FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B55A92532CE7F1A1002502FA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B55A92542CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleTests */,
+			);
+			name = "ultravox-client-sdk-ios-exampleTests";
+			packageProductDependencies = (
+			);
+			productName = "ultravox-client-sdk-ios-exampleTests";
+			productReference = B55A92512CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B55A925A2CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55A926B2CE7F1A1002502FA /* Build configuration list for PBXNativeTarget "ultravox-client-sdk-ios-exampleUITests" */;
+			buildPhases = (
+				B55A92572CE7F1A1002502FA /* Sources */,
+				B55A92582CE7F1A1002502FA /* Frameworks */,
+				B55A92592CE7F1A1002502FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B55A925D2CE7F1A1002502FA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B55A925E2CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleUITests */,
+			);
+			name = "ultravox-client-sdk-ios-exampleUITests";
+			packageProductDependencies = (
+			);
+			productName = "ultravox-client-sdk-ios-exampleUITests";
+			productReference = B55A925B2CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B55A92392CE7F1A0002502FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					B55A92402CE7F1A0002502FA = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					B55A92502CE7F1A1002502FA = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = B55A92402CE7F1A0002502FA;
+					};
+					B55A925A2CE7F1A1002502FA = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = B55A92402CE7F1A0002502FA;
+					};
+				};
+			};
+			buildConfigurationList = B55A923C2CE7F1A0002502FA /* Build configuration list for PBXProject "ultravox-client-sdk-ios-example" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B55A92382CE7F1A0002502FA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B55A92422CE7F1A0002502FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B55A92402CE7F1A0002502FA /* ultravox-client-sdk-ios-example */,
+				B55A92502CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleTests */,
+				B55A925A2CE7F1A1002502FA /* ultravox-client-sdk-ios-exampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B55A923F2CE7F1A0002502FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55A924F2CE7F1A1002502FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55A92592CE7F1A1002502FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B55A923D2CE7F1A0002502FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55A924D2CE7F1A1002502FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55A92572CE7F1A1002502FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B55A92532CE7F1A1002502FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B55A92402CE7F1A0002502FA /* ultravox-client-sdk-ios-example */;
+			targetProxy = B55A92522CE7F1A1002502FA /* PBXContainerItemProxy */;
+		};
+		B55A925D2CE7F1A1002502FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B55A92402CE7F1A0002502FA /* ultravox-client-sdk-ios-example */;
+			targetProxy = B55A925C2CE7F1A1002502FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B55A92632CE7F1A1002502FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B55A92642CE7F1A1002502FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B55A92662CE7F1A1002502FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ultravox-client-sdk-ios-example/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fixie.ultravox-client-sdk-ios-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B55A92672CE7F1A1002502FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ultravox-client-sdk-ios-example/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fixie.ultravox-client-sdk-ios-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B55A92692CE7F1A1002502FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fixie.ultravox-client-sdk-ios-exampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ultravox-client-sdk-ios-example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ultravox-client-sdk-ios-example";
+			};
+			name = Debug;
+		};
+		B55A926A2CE7F1A1002502FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fixie.ultravox-client-sdk-ios-exampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ultravox-client-sdk-ios-example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ultravox-client-sdk-ios-example";
+			};
+			name = Release;
+		};
+		B55A926C2CE7F1A1002502FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fixie.ultravox-client-sdk-ios-exampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ultravox-client-sdk-ios-example";
+			};
+			name = Debug;
+		};
+		B55A926D2CE7F1A1002502FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fixie.ultravox-client-sdk-ios-exampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ultravox-client-sdk-ios-example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B55A923C2CE7F1A0002502FA /* Build configuration list for PBXProject "ultravox-client-sdk-ios-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55A92632CE7F1A1002502FA /* Debug */,
+				B55A92642CE7F1A1002502FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55A92652CE7F1A1002502FA /* Build configuration list for PBXNativeTarget "ultravox-client-sdk-ios-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55A92662CE7F1A1002502FA /* Debug */,
+				B55A92672CE7F1A1002502FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55A92682CE7F1A1002502FA /* Build configuration list for PBXNativeTarget "ultravox-client-sdk-ios-exampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55A92692CE7F1A1002502FA /* Debug */,
+				B55A926A2CE7F1A1002502FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55A926B2CE7F1A1002502FA /* Build configuration list for PBXNativeTarget "ultravox-client-sdk-ios-exampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55A926C2CE7F1A1002502FA /* Debug */,
+				B55A926D2CE7F1A1002502FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B55A92392CE7F1A0002502FA /* Project object */;
+}
