@@ -118,11 +118,6 @@
 			name = "ultravox-client-sdk-ios-example";
 			packageProductDependencies = (
 				279110242D02765B006785F8 /* Ultravox */,
-				279110262D0276B0006785F8 /* Ultravox */,
-				279110292D0277F6006785F8 /* Ultravox */,
-				279110302D02798E006785F8 /* Ultravox */,
-				279110332D0279F9006785F8 /* Ultravox */,
-				279110362D027A25006785F8 /* Ultravox */,
 			);
 			productName = "ultravox-client-sdk-ios-example";
 			productReference = B55A92412CE7F1A0002502FA /* ultravox-client-sdk-ios-example.app */;
@@ -583,26 +578,6 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		279110242D02765B006785F8 /* Ultravox */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Ultravox;
-		};
-		279110262D0276B0006785F8 /* Ultravox */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Ultravox;
-		};
-		279110292D0277F6006785F8 /* Ultravox */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Ultravox;
-		};
-		279110302D02798E006785F8 /* Ultravox */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Ultravox;
-		};
-		279110332D0279F9006785F8 /* Ultravox */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Ultravox;
-		};
-		279110362D027A25006785F8 /* Ultravox */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Ultravox;
 		};
