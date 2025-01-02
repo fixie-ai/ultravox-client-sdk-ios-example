@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B556330C2CE7F934004B9E9B /* Ultravox in Frameworks */ = {isa = PBXBuildFile; productRef = B556330B2CE7F934004B9E9B /* Ultravox */; };
+		279110252D02765B006785F8 /* Ultravox in Frameworks */ = {isa = PBXBuildFile; productRef = 279110242D02765B006785F8 /* Ultravox */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B556330C2CE7F934004B9E9B /* Ultravox in Frameworks */,
+				279110252D02765B006785F8 /* Ultravox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 			);
 			name = "ultravox-client-sdk-ios-example";
 			packageProductDependencies = (
-				B556330B2CE7F934004B9E9B /* Ultravox */,
+				279110242D02765B006785F8 /* Ultravox */,
 			);
 			productName = "ultravox-client-sdk-ios-example";
 			productReference = B55A92412CE7F1A0002502FA /* ultravox-client-sdk-ios-example.app */;
@@ -202,7 +202,7 @@
 			mainGroup = B55A92382CE7F1A0002502FA;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B5AADFE92CE7F742008C1B8A /* XCRemoteSwiftPackageReference "ultravox-client-sdk-ios" */,
+				279110382D027B10006785F8 /* XCRemoteSwiftPackageReference "ultravox-client-sdk-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B55A92422CE7F1A0002502FA /* Products */;
@@ -405,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ultravox-client-sdk-ios-example/Preview Content\"";
+				DEVELOPMENT_TEAM = 5L4SLQB67F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -412,6 +413,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +442,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,20 +566,19 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B5AADFE92CE7F742008C1B8A /* XCRemoteSwiftPackageReference "ultravox-client-sdk-ios" */ = {
+		279110382D027B10006785F8 /* XCRemoteSwiftPackageReference "ultravox-client-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fixie-ai/ultravox-client-sdk-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.4;
+				minimumVersion = 0.0.7;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B556330B2CE7F934004B9E9B /* Ultravox */ = {
+		279110242D02765B006785F8 /* Ultravox */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B5AADFE92CE7F742008C1B8A /* XCRemoteSwiftPackageReference "ultravox-client-sdk-ios" */;
 			productName = Ultravox;
 		};
 /* End XCSwiftPackageProductDependency section */

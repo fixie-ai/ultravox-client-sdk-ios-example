@@ -11,7 +11,7 @@ struct UltravoxApp: App {
 
 struct ContentView: View {
     @StateObject private var viewModel = CallViewModel()
-    
+
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
@@ -33,17 +33,17 @@ struct ContentView: View {
 struct ConnectionView: View {
     @ObservedObject var viewModel: CallViewModel
     @State private var joinUrl: String = ""
-    
+
     var body: some View {
         VStack(spacing: 20) {
             TextField("Join URL", text: $joinUrl)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-            
+
             HStack {
                 Toggle("Debug", isOn: $viewModel.isDebugEnabled)
-                
+
                 Spacer()
-                
+
                 Button(action: {
                     Task {
                         await viewModel.startCall(joinUrl: joinUrl)
@@ -61,7 +61,7 @@ struct ConnectionView: View {
 struct CallView: View {
     @ObservedObject var viewModel: CallViewModel
     @State private var messageText: String = ""
-    
+
     var body: some View {
         VStack {
             // Transcripts
@@ -80,12 +80,12 @@ struct CallView: View {
                 }
             }
             .frame(maxHeight: 200)
-            
+
             // Message input
             HStack {
                 TextField("Type a message", text: $messageText)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                
+
                 Button(action: {
                     Task {
                         await viewModel.sendMessage(messageText)
@@ -96,7 +96,7 @@ struct CallView: View {
                 }
                 .disabled(messageText.isEmpty)
             }
-            
+
             // Control buttons
             HStack(spacing: 20) {
                 Button(action: {
@@ -108,7 +108,7 @@ struct CallView: View {
                           systemImage: viewModel.isMicMuted ? "mic.slash.fill" : "mic.fill")
                 }
                 .buttonStyle(.bordered)
-                
+
                 Button(action: {
                     Task {
                         await viewModel.toggleSpeaker()
@@ -118,7 +118,7 @@ struct CallView: View {
                           systemImage: viewModel.isSpeakerMuted ? "speaker.slash.fill" : "speaker.wave.2.fill")
                 }
                 .buttonStyle(.bordered)
-                
+
                 Button(action: {
                     Task {
                         await viewModel.endCall()
@@ -129,12 +129,12 @@ struct CallView: View {
                 }
                 .buttonStyle(.bordered)
             }
-            
+
             if viewModel.isDebugEnabled {
                 VStack(alignment: .leading) {
                     Text("Last Debug Message:")
                         .font(.headline)
-                    
+
                     if let debugMessage = viewModel.lastDebugMessage {
                         DebugMessageView(message: debugMessage)
                     }
@@ -148,7 +148,7 @@ struct CallView: View {
 
 struct TranscriptRow: View {
     let transcript: TranscriptViewModel
-    
+
     var body: some View {
         HStack(alignment: .top) {
             Text(transcript.speaker == .user ? "You:" : "Agent:")
@@ -160,7 +160,7 @@ struct TranscriptRow: View {
 
 struct DebugMessageView: View {
     let message: [String: Any]
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             ForEach(Array(message.keys), id: \.self) { key in
@@ -179,7 +179,7 @@ struct TranscriptViewModel: Identifiable, Equatable {
     let id = UUID()
     let speaker: Role
     let text: String
-    
+
     static func == (lhs: TranscriptViewModel, rhs: TranscriptViewModel) -> Bool {
         lhs.id == rhs.id && lhs.speaker == rhs.speaker && lhs.text == rhs.text
     }
@@ -194,16 +194,32 @@ class CallViewModel: ObservableObject {
     @Published var isSpeakerMuted: Bool = false
     @Published var isDebugEnabled: Bool = false
     @Published var lastDebugMessage: [String: Any]?
-    
+
     private var statusObserver: NSObjectProtocol?
     private var transcriptsObserver: NSObjectProtocol?
     private var micMutedObserver: NSObjectProtocol?
     private var speakerMutedObserver: NSObjectProtocol?
     private var experimentalMessageObserver: NSObjectProtocol?
-    
+
     func startCall(joinUrl: String) async {
         session = UltravoxSession(experimentalMessages: isDebugEnabled ? ["debug"] : [])
-        
+
+        struct MenuItem: Codable {
+            var name: String
+            var price: Float
+        }
+        struct SecretMenu: Codable {
+            var specialItems: [MenuItem]
+        }
+        session?.registerToolImplementation(name: "getSecretMenu", implementation: { _ in
+            let secretMenu = SecretMenu(specialItems: [
+                MenuItem(name: "Banana smoothie", price: 3.99),
+                MenuItem(name: "Butter pecan ice cream (one scoop)", price: 1.99),
+            ])
+            let json = try JSONEncoder().encode(secretMenu)
+            return ClientToolResult(result: String(data: json, encoding: .utf8) ?? "Secret menu unavailable")
+        })
+
         // Set up notification observers with Task for main actor calls
         statusObserver = NotificationCenter.default.addObserver(
             forName: .status,
@@ -214,7 +230,7 @@ class CallViewModel: ObservableObject {
                 self?.updateConnectionStatus()
             }
         }
-        
+
         transcriptsObserver = NotificationCenter.default.addObserver(
             forName: .transcripts,
             object: nil,
@@ -224,7 +240,7 @@ class CallViewModel: ObservableObject {
                 self?.updateTranscripts()
             }
         }
-        
+
         micMutedObserver = NotificationCenter.default.addObserver(
             forName: .micMuted,
             object: nil,
@@ -234,7 +250,7 @@ class CallViewModel: ObservableObject {
                 self?.updateMicStatus()
             }
         }
-        
+
         speakerMutedObserver = NotificationCenter.default.addObserver(
             forName: .speakerMuted,
             object: nil,
@@ -244,7 +260,7 @@ class CallViewModel: ObservableObject {
                 self?.updateSpeakerStatus()
             }
         }
-        
+
         if isDebugEnabled {
             experimentalMessageObserver = NotificationCenter.default.addObserver(
                 forName: .experimentalMessage,
@@ -262,10 +278,10 @@ class CallViewModel: ObservableObject {
         // Join call
         await session?.joinCall(joinUrl: joinUrl)
     }
-    
+
     func endCall() async {
         await session?.leaveCall()
-        
+
         // Remove observers
         if let statusObserver = statusObserver {
             NotificationCenter.default.removeObserver(statusObserver)
@@ -282,37 +298,37 @@ class CallViewModel: ObservableObject {
         if let experimentalMessageObserver = experimentalMessageObserver {
             NotificationCenter.default.removeObserver(experimentalMessageObserver)
         }
-        
+
         session = nil
         isConnected = false
     }
-    
+
     func sendMessage(_ text: String) async {
         await session?.sendText(text)
     }
-    
+
     func toggleMic() async {
         session?.toggleMicMuted()
     }
-    
+
     func toggleSpeaker() async {
         session?.toggleSpeakerMuted()
     }
-    
+
     private func updateConnectionStatus() {
         isConnected = session?.status.isLive() ?? false
     }
-    
+
     private func updateTranscripts() {
         transcripts = session?.transcripts.map {
             TranscriptViewModel(speaker: $0.speaker, text: $0.text)
         } ?? []
     }
-    
+
     private func updateMicStatus() {
         isMicMuted = session?.micMuted ?? false
     }
-    
+
     private func updateSpeakerStatus() {
         isSpeakerMuted = session?.speakerMuted ?? false
     }

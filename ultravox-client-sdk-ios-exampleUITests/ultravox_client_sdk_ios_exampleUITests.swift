@@ -8,7 +8,6 @@
 import XCTest
 
 final class ultravox_client_sdk_ios_exampleUITests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 

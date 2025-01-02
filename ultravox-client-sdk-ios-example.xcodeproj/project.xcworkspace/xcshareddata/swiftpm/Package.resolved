@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/livekit/client-sdk-swift.git",
       "state" : {
-        "revision" : "2e05b21bd1265dd88bcef6030cbb6e3755653c58",
-        "version" : "2.0.17"
+        "revision" : "9c5242f0217f59f5f30fd122e7ac509dcf446201",
+        "version" : "2.0.19"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log.git",
       "state" : {
-        "revision" : "9cb486020ebf03bfa5b5df985387a14a98744537",
-        "version" : "1.6.1"
+        "revision" : "96a2f8a0fa41e9e09af4585e2724c4e825410b91",
+        "version" : "1.6.2"
       }
     },
     {
@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/fixie-ai/ultravox-client-sdk-ios",
       "state" : {
-        "revision" : "1482ef7b24294c8bedf7bee8465334b244be1a67",
-        "version" : "0.0.5"
+        "revision" : "09fd2f3ed9525267fd41743dc287d123c4f17072",
+        "version" : "0.0.7"
       }
     },
     {
