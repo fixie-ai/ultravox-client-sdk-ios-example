@@ -8,7 +8,6 @@
 import XCTest
 
 final class ultravox_client_sdk_ios_exampleUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
