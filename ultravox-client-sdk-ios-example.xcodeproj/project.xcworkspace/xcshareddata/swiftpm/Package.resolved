@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/fixie-ai/ultravox-client-sdk-ios",
       "state" : {
-        "revision" : "09fd2f3ed9525267fd41743dc287d123c4f17072",
-        "version" : "0.0.7"
+        "revision" : "eed0513a8efdbeb5936de2de04c8e3df9ac05699",
+        "version" : "0.0.9"
       }
     },
     {
